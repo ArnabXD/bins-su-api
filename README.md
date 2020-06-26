@@ -1,6 +1,33 @@
 # Bins-Su-API
+
 An API to get BIN details from bins.su ( Unofficial &amp; may break if bins.su do any changes to their site )
 
+## API
+
+Send Get Request to `http://yourhost:port/api/<BIN TO SEARCH>`
+
+## Example
+Request to : `https://near-foggy-silverfish.glitch.me/api/439129`
+
+Response : 
+```
+{
+  "result": true,
+  "data": { 
+    "country": "Nepal",
+    "vendor": "VISA",
+    "type": "DEBIT",
+    "level": "ELECTRON",
+    "bank": "KUMARI BANK, LTD."
+  },
+  "message": "successful"
+}
+```
+Errors :
+
+`{"result":false,"message":"No Results Found"}`
+
+`{"result":false,"message":"Request a Valid BIN"}`
 ## Running Locally
 
 ```
@@ -22,13 +49,3 @@ $ heroku open
 or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## API
-
-Send Get Request to : `yourhost:port/api/<BIN TO SEARCH>`
-
-### Example : 
-
-Request to : `https://near-foggy-silverfish.glitch.me/api/439129`
-
-Response : `{"result":true,"data":{"country":"Nepal","vendor":"VISA","type":"DEBIT","level":"ELECTRON","bank":"KUMARI BANK, LTD."},"message":"successful"}`
