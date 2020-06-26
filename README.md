@@ -3,11 +3,6 @@ An API to get BIN details from bins.su ( Unofficial &amp; may break if the bins.
 
 ## Running Locally
 
-<<<<<<< HEAD
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
-
-=======
->>>>>>> 446b4e2113ad36b6be2f99fc958633abeac9af00
 ```sh
 $ git clone https://github.com/ArnabXD/bins-su-api # or clone your own fork
 $ cd bins-su-api
