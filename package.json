@@ -2,6 +2,10 @@
   "name": "bins-su-api",
   "version": "1.0.0",
   "description": "An Unofficial API to get BIN Details from bins.su",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArnabXD/bins-su-api"
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
