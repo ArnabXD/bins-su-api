@@ -23,3 +23,6 @@ or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+## API
+
+Send Get Request to : `yourhost:port/api/<BIN TO SEARCH>`
