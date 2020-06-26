@@ -1,0 +1,8 @@
+{
+    "name": "Bins.Su API",
+    "description": "Unofficial API for BINS.SU",
+    "repository": "https://github.com/ArnabXD/bins-su-api",
+    "logo": "https://i.ibb.co/Np3JfMH/20-205558-one-punch-man-fist-one-punch-man-fist.png",
+    "keywords": ["node", "express", "heroku","bins"],
+    "image": "heroku/nodejs"
+  }
