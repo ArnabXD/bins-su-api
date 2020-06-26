@@ -1,10 +1,10 @@
 # Bins-Su-API
-An API to get BIN details from bins.su ( Unofficial &amp; may break if the bins.su do any changes )
+An API to get BIN details from bins.su ( Unofficial &amp; may break if bins.su do any changes to their site )
 
 ## Running Locally
 
-```sh
-$ git clone https://github.com/ArnabXD/bins-su-api # or clone your own fork
+```
+$ git clone https://github.com/ArnabXD/bins-su-api
 $ cd bins-su-api
 $ npm install
 $ npm start
