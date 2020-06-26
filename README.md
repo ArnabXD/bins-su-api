@@ -26,3 +26,8 @@ or
 ## API
 
 Send Get Request to : `yourhost:port/api/<BIN TO SEARCH>`
+
+### Example : 
+
+Request to : `https://near-foggy-silverfish.glitch.me/api/439129`
+Response : `{"result":true,"data":{"country":"Nepal","vendor":"VISA","type":"DEBIT","level":"ELECTRON","bank":"KUMARI BANK, LTD."},"message":"successful"}`
