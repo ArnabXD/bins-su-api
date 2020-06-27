@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    let host = window.location.href;   
+    $("#api").text(" " + host + "api/{bin to search}");
+});
+
 function search() {
     var bin = $("#bin").val();
     $("#result").hide();
