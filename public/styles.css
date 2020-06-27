@@ -2,11 +2,10 @@
 body {
     background-color: black !important;
 	color: white !important;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 .header {
 	text-align: center;
-	width: 100%;
 	font-size: 2em;
 	font-family: 'Krona One', sans-serif;;
 	color: #FFFFFF;
@@ -77,6 +76,12 @@ td {
 }
 .github {
 	position:fixed;
-	bottom:10px;
-	right:10px;
+	bottom:5px;
+	right:5px;
+}
+.info {
+	text-align: center;
+	border-top:1px solid #0091ea;
+	margin: 0 15px;
+	padding-top: 15px
 }
