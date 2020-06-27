@@ -34,8 +34,9 @@ async function fetchData(bin) {
     return res.data;
 }
 
-async function scrape(bin) {    
-    if (bin.length<6) {
+async function scrape(bin) {  
+    let isNumber = /^\d+$/.test(bin); 
+    if (bin.length<6 || !isNumber) {
         return JSON.stringify({
             "result": false,
             "message": "Request a Valid BIN"
@@ -61,13 +62,13 @@ async function scrape(bin) {
     let resp = JSON.stringify({
         "result": true,
         "data": {
-            "country": alpha2.getCountry(country),
             "vendor": vendor,
             "type": type,
             "level": level,
-            "bank": bank
+            "bank": bank,
+            "country": alpha2.getCountry(country)
         },
-        "message": "successful"
+        "message": "Search Successful"
     });
     return resp;
 }
