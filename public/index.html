@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- Designed by ArnabXD // https://github.com/ArnabXD -->
+<html lang="en">
+<head>
+    <title>XDBINS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="header">BIN CHECKER</div>
+    <div class="box search">
+        <div class="form-inline"><center>
+            <br><br><br><br>
+            <div class="form-group">    
+                <input type="text" placeholder="Enter BIN" id="bin" wrap="soft"><button onclick="search()">Search</button>
+            </div></center>
+        </div>
+    </div>
+    <div class="box">
+        <center><img src="loader.svg" id="loader" style="display:none"/></center>
+        <div id="error" style="display:none;" class="error"></div>
+        <div class="box" id="result" style="display:none">
+            <table class="table">
+                <thead>
+                <tr>
+                    <td><b>BIN</b></td>
+                    <td style="font-weight: bold;" id="binn"></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Card Brand</td>
+                    <td id="vendor"></td>
+                </tr>
+                <tr>
+                    <td>Card Type</td>
+                    <td id="type"></td>
+                </tr>
+                <tr>
+                    <td>Card Level</td>
+                    <td id="level"></td>
+                </tr>
+                <tr>
+                    <td>Bank</td>
+                    <td id="bank"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td id="country"></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
