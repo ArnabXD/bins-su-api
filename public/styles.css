@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
 body {
     background-color: black !important;
     color: white !important;
@@ -11,7 +12,7 @@ body {
 	border-bottom: 2px solid #0091ea;
 }
 .box {
-	min-height: 250px;
+	min-height: 200px;
 	align-content: center;
 	align-items: center;
 	margin: auto;
@@ -69,4 +70,18 @@ td {
 	padding:10px;
 	margin:20px;
 	color:red;
+	border-radius: 6px;
+}
+.api {
+	background-color: #333;
+	margin:0;
+	padding:5px 25px 5px 20px;
+	vertical-align: middle;
+	color:#DDD;
+	font-size: 1.5em;
+	font-family: 'Muli', sans-serif;
+}
+.api label {
+	font-weight: bold;
+	color: #0091ea;
 }
