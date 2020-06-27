@@ -1,37 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
 body {
     background-color: black !important;
-    color: white !important;
+	color: white !important;
+	overflow-x: hidden;
 }
 .header {
 	text-align: center;
 	width: 100%;
-	font-size: 3em;
+	font-size: 2em;
 	font-family: 'Krona One', sans-serif;;
 	color: #FFFFFF;
-	border-bottom: 2px solid #0091ea;
+	margin:20px;
 }
 .box {
-	min-height: 200px;
+	min-height: 150px;
 	align-content: center;
 	align-items: center;
 	margin: auto;
 	padding: 10px;
 }
-.search {
-	padding: 20px;
-	margin:25px auto !important;
-	/* position: absolute;
-	top: 50%;
-	left:50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%); */
-}
 input[type=text],input[type=text]:focus {
 	padding: 8px 10px;
 	background-color: black;
+	width:auto;
 	color: #0091ea;
-	font-size: 2em;
 	border: 1.5px solid #0091ea;
 	border-radius: 10px 0 0 10px;
 	-webkit-border-radius:10px 0 0 10px;
@@ -42,7 +34,6 @@ button {
 	padding: 8px 10px;
 	background-color: #0091ea;
 	color: white;
-	font-size: 2em !important;
 	border: 1.5px solid #0091ea;
 	border-radius: 0 10px 10px 0;
 	-webkit-border-radius:0 10px 10px 0;
@@ -56,7 +47,6 @@ img {
 	border: 1.5px solid #0091ea;
 	margin: 10px;
 	padding: 3px 5px;
-	font-size: 1.5em;
 	border-radius: 6px;
 }
 td {
@@ -75,13 +65,18 @@ td {
 .api {
 	background-color: #333;
 	margin:0;
-	padding:5px 25px 5px 20px;
+	padding:5px 25px 0px 20px;
 	vertical-align: middle;
 	color:#DDD;
-	font-size: 1.5em;
 	font-family: 'Muli', sans-serif;
+	border-top:1px solid #0091ea;
 }
 .api label {
 	font-weight: bold;
 	color: #0091ea;
+}
+.github {
+	position:fixed;
+	bottom:10px;
+	right:10px;
 }

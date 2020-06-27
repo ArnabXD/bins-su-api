@@ -1,6 +1,6 @@
-$(document).ready(function(){
-    let host = window.location.href;   
-    $("#api").text(" " + host + "api/{bin to search}");
+$(document).ready(function () {
+    let host = window.location.href;
+    $("#api").text(" " + host + "api/{bin}");
 });
 
 function search() {
@@ -22,8 +22,7 @@ function search() {
                 $("#bank").text(resp.data.bank);
                 $("#country").text(resp.data.country);
                 $("#result").show();
-            }
-            else {
+            } else {
                 $("#error").text(resp.message);
                 $("#error").show();
             }
