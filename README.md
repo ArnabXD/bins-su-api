@@ -1,6 +1,6 @@
 # Bins-Su-API
 
-An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site ) ([Demo](https://shard-flannel-power.glitch.me/))
+An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site ) ([Demo](http://binsapi.herokuapp.com/))
 
 ## API
 
@@ -8,7 +8,7 @@ Send Get Request to `http://yourhost:port/api/{bin}`
 
 ## Example
 
-Request to : `https://shard-flannel-power.glitch.me/api/439129`
+Request to : `http://binsapi.herokuapp.com/api/439129`
 
 Response : 
 
