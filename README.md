@@ -39,6 +39,6 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 
 ## Deploying to Vercel/Zeit
 
-[![Deploy to Vercel](/button)](/import/project?template=https://github.com/ArnabXD/bins-su-api)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/ArnabXD/bins-su-api)
 
 `Note : Scraping is not a Fair use of Vercel`
