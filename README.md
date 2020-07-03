@@ -8,7 +8,7 @@ Send Get Request to `http://yourhost:port/api/{bin}`
 
 ## Example
 
-Request to : `http://binsapi.herokuapp.com/api/439129`
+Request to : `https://bins-su-api.now.sh/api/439129`
 
 Response : 
 
