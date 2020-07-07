@@ -8,7 +8,7 @@ Send Get Request to `http://yourhost:port/api/{bin}`
 
 ## Example
 
-Request to : `http://binsapi.herokuapp.com/api/439129`
+Request to : `https://bins-su-api.now.sh/api/439129`
 
 Response : 
 
@@ -39,6 +39,6 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 
 ## Deploying to Vercel/Zeit
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/ArnabXD/bins-su-api)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/ArnabXD/bins-su-api)
 
 `Note : Scraping is not a Fair use of Vercel`
