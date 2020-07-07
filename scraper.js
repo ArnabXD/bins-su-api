@@ -1,7 +1,6 @@
 const cheerio = require("cheerio");
 const axios = require('axios');
 const qs = require('qs');
-const QueryString = require("qs");
 var alpha2 = require('iso-3166-1-alpha-2')
 
 async function fetchData(bin) {
