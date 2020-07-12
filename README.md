@@ -1,6 +1,6 @@
 # Bins-Su-API
 
-An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site ) ([Demo](http://binsapi.herokuapp.com/))
+An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site ) ([Demo](https://bins-su-api.now.sh/))
 
 ## API
 
