@@ -1,6 +1,6 @@
 {
   "name": "bins-su-api",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An Unofficial API to get BIN Details from bins.su",
   "repository": {
     "type": "git",

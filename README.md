@@ -8,12 +8,12 @@ Send Get Request to `http://yourhost:port/api/{bin}`
 
 ## Example
 
-Request to : `https://bins-su-api.now.sh/api/439129`
+Request to : `https://bins-su-api.now.sh/api/549184`
 
 Response : 
 
 `
-{ "result": true, "data": { "vendor": "VISA", "type": "DEBIT", "level": "ELECTRON", "bank": "KUMARI BANK, LTD.", "country": "NEPAL" }, "message": "Search Successful" }
+{"result":true,"data":{"bin":"549184","vendor":"MASTERCARD","type":"DEBIT","level":"PLATINUM","bank":"BANK NIZWA SAOG","country":"OMAN"},"message":"Search Successful"}
 `
 
 Errors :
