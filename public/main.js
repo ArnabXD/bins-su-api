@@ -15,7 +15,7 @@ function search() {
             $("#loader").hide();
             var resp = JSON.parse(data);
             if (resp.result) {
-                $("#binn").text(bin.substr(0,6));
+                $("#binn").text(resp.data.bin);
                 $("#vendor").text(resp.data.vendor);
                 $("#type").text(resp.data.type);
                 $("#level").text(resp.data.level);

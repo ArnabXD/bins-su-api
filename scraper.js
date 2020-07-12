@@ -60,14 +60,15 @@ async function scrape(bin) {
 
     let resp = JSON.stringify({
         "result": true,
+        "message": "Search Successful",
         "data": {
+            "bin": bin,
             "vendor": vendor,
             "type": type,
             "level": level,
             "bank": bank,
             "country": alpha2.getCountry(country).toUpperCase()
-        },
-        "message": "Search Successful"
+        }
     });
     return resp;
 }
