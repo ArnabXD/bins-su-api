@@ -2,6 +2,8 @@
 
 An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site ) ([Demo](https://bins-su-api.now.sh/))
 
+## [Why bins-su-api.now.sh isn't working ?](https://github.com/ArnabXD/bins-su-api/issues/5)
+
 ## API
 
 Send Get Request to `http://yourhost:port/api/{bin}`
