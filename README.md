@@ -14,7 +14,7 @@ Send Get Request to `http://yourhost:port/api/{bin}`
 
 ## Example
 
-Request to : `https://bins-su-api.now.sh/api/549184`
+Request to : `https://bins-su-api.vercel.app/api/549184`
 
 Response : 
 
