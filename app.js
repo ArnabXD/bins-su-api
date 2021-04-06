@@ -1,9 +1,13 @@
-var express = require("express");
+const express = require("express");
 const path = require("path");
-var app = express();
-var scraper = require("./scraper.js");
+const app = express();
+const scraper = require("./scraper.js");
+const cors = require("cors");
 
 app.use(express.static("public"));
+app.use(cors({
+    origin: "*"
+}));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -23,7 +27,7 @@ app.get("/api/:bin", function (req, res) {
         });
 });
 
-app.use(function (req, res, next) {
+app.use(function (req, res) {
     res.redirect(301, "/");
 });
 
