@@ -1,16 +1,17 @@
 const cheerio = require("cheerio");
 const axios = require('axios');
 const qs = require('qs');
-var alpha2 = require('iso-3166-1-alpha-2')
+const alpha2 = require('iso-3166-1-alpha-2')
+const emojiFlag = require('emoji-flags');
 
 async function fetchData(bin) {
-    var data = qs.stringify({
+    let data = qs.stringify({
         'action': 'searchbins',
         'bins': bin,
         'bank': '',
         'country': ''
     });
-    var config = {
+    let config = {
         method: 'post',
         url: 'http://bins.su/',
         headers: {
@@ -33,9 +34,9 @@ async function fetchData(bin) {
     return res.data;
 }
 
-async function scrape(bin) {  
-    let isNumber = /^\d+$/.test(bin); 
-    if (bin.length<6 || !isNumber) {
+async function scrape(bin) {
+    let isNumber = /^\d+$/.test(bin);
+    if (bin.length < 6 || !isNumber) {
         return JSON.stringify({
             "result": false,
             "message": "Request a Valid BIN"
@@ -57,6 +58,7 @@ async function scrape(bin) {
     let type = $("#result tr:nth-child(2) td:nth-child(4)").text();
     let level = $("#result tr:nth-child(2) td:nth-child(5)").text();
     let bank = $("#result tr:nth-child(2) td:nth-child(6)").text();
+    let countryInfo = emojiFlag.countryCode(country);
 
     let resp = JSON.stringify({
         "result": true,
@@ -67,7 +69,14 @@ async function scrape(bin) {
             "type": type,
             "level": level,
             "bank": bank,
-            "country": alpha2.getCountry(country).toUpperCase()
+            "country": alpha2.getCountry(country).toUpperCase(),
+            "countryInfo": {
+                "name": countryInfo.name.toUpperCase(),
+                "emoji": countryInfo.emoji,
+                "unicode": countryInfo.unicode,
+                "code": countryInfo.code,
+                "dialCode": countryInfo.dialCode
+            }
         }
     });
     return resp;
