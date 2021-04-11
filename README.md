@@ -1,6 +1,6 @@
 # Bins-Su-API
 
-An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site ) ([Demo](https://bins-su-api.vercel.app))
+An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site ) ([Demo](https://binssuapi.vercel.app/))
 
 ---
 
@@ -14,7 +14,7 @@ Send Get Request to `http://yourhost:port/api/{bin}`
 
 ## Example
 
-Request to : `https://bins-su-api.vercel.app/api/549184`
+Request to : `https://binssuapi.vercel.app/api/549184`
 
 Response : 
 
@@ -40,7 +40,7 @@ Response :
 }
 ```
 
-Errors :
+#### Errors :
 
 ```json
 // No Results Found
