@@ -13,7 +13,8 @@ function search() {
         url: "/api/" + bin,
         success: function (data) {
             $("#loader").hide();
-            var resp = JSON.parse(data);
+            var resp = JSON.parse(JSON.stringify(data));
+            console.log(resp.result)
             if (resp.result) {
                 $("#binn").text(resp.data.bin);
                 $("#vendor").text(resp.data.vendor);
