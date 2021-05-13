@@ -1,3 +1,4 @@
+// @ts-check
 const express = require("express");
 const path = require("path");
 const app = express();
@@ -22,9 +23,7 @@ app.get("/api/:bin", async (req, res) => {
         res.type('application/json');
         res.send(data);
     } catch (err) {
-        res.status(500, {
-            error: err
-        })
+        res.status(500).json({ error: err });
     }
 });
 
