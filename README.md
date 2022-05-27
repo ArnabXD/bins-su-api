@@ -1,6 +1,6 @@
 # Bins-Su-API
 
-An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site ) ([Demo](https://binssuapi.vercel.app/))
+An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site )
 
 ---
 
