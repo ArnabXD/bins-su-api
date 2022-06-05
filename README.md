@@ -1,7 +1,3 @@
-> bins.su is moved/closed so this codebase doesn't work. If you know the new domain then let me know, to make it working agin.
-
----
-
 # Bins-Su-API
 
 An API to get BIN details from bins.su ( Unofficial &amp; may not work if bins.su do any changes to their site )
