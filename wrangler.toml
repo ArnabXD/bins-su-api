@@ -1,0 +1,6 @@
+name = "bins-su-api"
+main = "src/index.ts"
+compatibility_date = "2022-12-12"
+
+[site]
+bucket = "./assets"
