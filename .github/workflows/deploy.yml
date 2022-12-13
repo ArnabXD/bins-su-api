@@ -15,7 +15,6 @@ jobs:
         with:
           node-version: 16
           cache: 'yarn'
-      - run: yarn install
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -25,6 +24,7 @@ jobs:
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
+          preCommands: yarn install
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: publish
