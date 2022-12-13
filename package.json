@@ -14,7 +14,6 @@
     "deploy": "wrangler publish"
   },
   "dependencies": {
-    "@arnabxd/bin-lookup": "^2.0.0",
     "hono": "^2.6.1"
   },
   "devDependencies": {
