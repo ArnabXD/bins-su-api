@@ -7,15 +7,25 @@ on:
   repository_dispatch:
   workflow_dispatch:
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'yarn'
+      - run: yarn install
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    needs: setup
     steps:
       - uses: actions/checkout@v2
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-        env:
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+        command: publish
 

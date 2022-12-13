@@ -10,7 +10,7 @@ Send Get Request to `http://yourhost:port/api/{bin}`
 
 ## Example
 
-Request to : `https://binssuapi.vercel.app/api/549184`
+Request to : `https://yourhost:port/api/439129`
 
 Response : 
 
